@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TypeConversion
+namespace Operators
 {
     class Program
     {
@@ -47,21 +47,54 @@ namespace TypeConversion
             //    var number = "1234";
             //    int i = Convert.ToInt32(number);
             //    Console.WriteLine(i);
-            try
-            {
-                //var number = "1234";
-                //byte b = Convert.ToByte(number);
-                //Console.WriteLine(b);
-                string str = "true";
-                bool b = Convert.ToBoolean(str);
-                Console.WriteLine(b);
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("The number could not be converted to a byte");
-            }
+            //try
+            //{
+            //    //var number = "1234";
+            //    //byte b = Convert.ToByte(number);
+            //    //Console.WriteLine(b);
+            //    string str = "true";
+            //    bool b = Convert.ToBoolean(str);
+            //    Console.WriteLine(b);
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("The number could not be converted to a byte");
+            //}
 
+            //var a = 1;
+            //var b = 2;
+            //var c = 3;
 
+            //// b should multiple by c and then add to a
+            //Console.WriteLine(a + b * c);
+            //// if you want to add a plus b then multiple by c
+            //Console.WriteLine((a+b)*c);
+
+            //Console.WriteLine(a + b);
+            //Console.WriteLine(a - b);
+            //Console.WriteLine(a * b);
+            //Console.WriteLine((float)a / (float)b);
+
+            // Comparison operator
+
+            //var a = 1;
+            //var b = 2;
+
+            //Console.WriteLine(!(a !=b)); // double negative or 2 negative
+            //Console.WriteLine(a > b);
+            //Console.WriteLine(a == b); // are equal - false
+            //Console.WriteLine(a != b); // not equal a and b
+
+            // Logical operators
+
+            var a = 1;
+            var b = 2;
+            var c = 3;
+
+            Console.WriteLine(c > b && c > a); // true return - use and operator
+            Console.WriteLine(c > b && c == a); // false since both statements do not equate
+            Console.WriteLine(c > b || c == a); // true -- or operator - true or false
+            Console.WriteLine(!(c > b || c ==a )); // false 
            
         }
     }
